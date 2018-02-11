@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <com.example.mayurpractical.util.CleanableEditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/top_search"
+        android:drawableLeft="@drawable/ic_icosearch"
+        android:drawablePadding="13dp"
+        android:drawableRight="@drawable/ic_close"
+        android:hint="Search"
+        android:padding="12dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:textColor="#FF606273"
+        android:textColorHint="#FF606273" />
+
+</RelativeLayout>

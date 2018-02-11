@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minWidth="300dp"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/cdtails"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/golden"
+        android:textSize="@dimen/text_16"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_codetwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp"
+        android:textColor="@color/fonttxtcolor"
+        android:textSize="@dimen/text_13"
+        android:textStyle="bold" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_codethree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp"
+        android:textColor="@color/fonttxtcolor"
+        android:textSize="@dimen/text_13"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_codethree"
+       android:layout_margin="@dimen/padding_margin_10"
+        android:minHeight="@dimen/height_width_36"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/aciv_flag"
+            android:layout_width="@dimen/height_width_90"
+            android:layout_height="@dimen/height_width_90"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ico_image_proof" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/horizontal_line"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_margin_10"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/view_selector"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/logintext"
+            android:textSize="@dimen/text_18" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/view_selector"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/logintext"
+            android:textSize="@dimen/text_18"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

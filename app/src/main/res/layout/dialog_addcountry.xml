@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <AutoCompleteTextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/addcountry"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18" />
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edt_search_name"
+        style="@style/EdittextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_app_name"
+        android:layout_margin="@dimen/padding_margin_10"
+        android:gravity="left|center"
+        android:hint="@string/Country"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:padding="@dimen/padding_margin_5"
+        android:singleLine="true"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_15" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edt_codetwo"
+        style="@style/EdittextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_search_name"
+        android:layout_marginLeft="@dimen/padding_margin_10"
+        android:layout_marginRight="@dimen/padding_margin_10"
+        android:gravity="left|center"
+        android:hint="@string/Codetwo"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:padding="@dimen/padding_margin_5"
+        android:singleLine="true"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_15" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edt_codethree"
+        style="@style/EdittextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_codetwo"
+        android:layout_margin="@dimen/padding_margin_10"
+        android:gravity="left|center"
+        android:hint="@string/Codethree"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:padding="@dimen/padding_margin_5"
+        android:singleLine="true"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_15" />
+
+    <LinearLayout
+        android:id="@+id/ll_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_codethree"
+        android:layout_marginLeft="@dimen/padding_margin_10"
+        android:layout_marginRight="@dimen/padding_margin_10"
+        android:minHeight="@dimen/height_width_36"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/CommonTextStyleregistration"
+            android:layout_width="@dimen/height_width_150"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|top"
+            android:padding="@dimen/padding_margin_5"
+            android:text="@string/flag" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/aciv_flag"
+            android:layout_width="@dimen/height_width_90"
+            android:layout_height="@dimen/height_width_90"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ico_image_proof" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_image"
+        android:layout_marginTop="@dimen/padding_margin_13"
+        android:background="@color/colorAccent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/horizontal_line"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/view_selector"
+            android:gravity="center"
+            android:text="@string/add"
+            android:textColor="@color/logintext"
+            android:textSize="@dimen/text_18" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/view_selector"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/logintext"
+            android:textSize="@dimen/text_18" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MayurPractical</string>
+    <string name="cancel">CANCEL</string>
+    <string name="ok">OK</string>
+    <string name="cdtails">Country Details</string>
+    <string name="addcountry">Add Country</string>
+    <string name="Country">Add New Country</string>
+    <string name="Codetwo">Action Code2</string>
+    <string name="Codethree">Action Code3</string>
+    <string name="add">ADD</string>
+    <string name="flag">Add Country Flag</string>
+    <string name="true_false">True</string>
+    <string name="false_true">False</string>
+    <string name="denied_permission">You denied the permission to access SD Card.</string>
+</resources>

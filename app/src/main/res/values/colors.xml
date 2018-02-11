@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3b3832</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#3b3832</color>
+
+    <color name="golden">#D2AE70</color>
+    <color name="divider">#FFEBECF0</color>
+    <color name="fonttxtcolor">#4C4D73</color>
+    <color name="recordback">#F9F9F9</color>
+    <color name="custom_progress_default_color">#b1000000</color>
+    <color name="onpress">#FFFFFFFF</color>
+    <color name="dashbackground">#e7e7e7</color>
+    <color name="logintext">#333333</color>
+    <color name="white">#FFFFFF</color>
+    <color name="hint">#B6BBC6</color>
+</resources>
